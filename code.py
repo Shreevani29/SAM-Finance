@@ -39,7 +39,7 @@ Invoice Number (Ensure it is extracted in plain text).
 Invoice Date (Format it as 'YYYY-MM-DD').
 Due Date (Format it as 'YYYY-MM-DD', if the Due Date is represented as Terms extract that also in text format,if due date as due date show that also, if there is date other that invoice data fetch that also).
 Client Name (Extract the full name of the client as it appears, it will be select the name of the compnay that sends out the bill and not the one who recieves, it should not be Samcorporate and YUSUF).
-Description (Extract the product or service description, it should display only product description, contract and month details).
+Description (Extract the product or service description, it should display product description, contract and month details).
 Quantity (Qty) (Ensure it is extracted as a number).
 Unit Price (USD) (Extract only the numeric value).
 Net Amount (USD) (Extract only the numeric value).
@@ -47,6 +47,7 @@ VAT % (Extract the percentage as a number).
 VAT Amount (Ensure it is extracted as a numeric value).
 Total Amount without VAT (Extract total amount).
 Total Amount with VAT (Extract total amount, only for VAT % 5).
+Cuurency.
 Ensure each field is placed in a separate column with appropriate headers. Return 'null' for any missing or unclear data. The CSV should be correctly formatted with commas as delimiters, without extra spaces or formatting errors."""
 
                 response = model.generate_content([prompt, extracted_text])
