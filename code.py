@@ -37,7 +37,7 @@ if uploaded_files:
  
 Invoice Number (Ensure it is extracted in plain text).
 Invoice Date (Format it as 'YYYY-MM-DD').
-Due Date (Format it as 'YYYY-MM-DD', if the Due Date is represented as Terms extract that also in plain text format,if due date as due date show that also, if there is date other that invoice data fetch that also).
+Due Date (Format it as 'YYYY-MM-DD', if the Due Date is represented as Net 60 extract that also in plain text format,if due date as due date show that also, if there is date other that invoice data fetch that also).
 Client Name (Extract the full name of the client as it appears, it will be select the name of the compnay that sends out the bill and not the one who recieves, it should not be Samcorporate and YUSUF).
 Description (Extract the product or service description, it should display product description, contract and month details).
 Quantity (Qty) (Ensure it is extracted as a number).
