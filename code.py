@@ -47,7 +47,8 @@ VAT % (Extract the percentage as a number).
 VAT Amount (Ensure it is extracted as a numeric value).
 Total Amount without VAT (Extract total amount).
 Total Amount with VAT (Extract total amount, only for VAT % 5).
-Cuurency.
+Currency.
+TRN No (VAT exemption number).
 Ensure each field is placed in a separate column with appropriate headers. Return 'null' for any missing or unclear data. The CSV should be correctly formatted with commas as delimiters, without extra spaces or formatting errors."""
 
                 response = model.generate_content([prompt, extracted_text])
