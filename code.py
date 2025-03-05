@@ -53,7 +53,7 @@ Total Amount without VAT (Extract total amount).
 Total Amount with VAT (Extract total amount, only for VAT % 5).
 Currency (Convert to code if symbol is present).
 TRN No (VAT exemption number).
-Ensure each field is placed in a separate column with appropriate headers.If any duplicate rows are generated fetch as single. Return 'null' for any missing or unclear data. The CSV should be correctly formatted with commas as delimiters, without extra spaces or formatting errors."""
+Ensure each field is placed in a separate column with appropriate headers. Return 'null' for any missing or unclear data. The CSV should be correctly formatted with commas as delimiters, without extra spaces or formatting errors."""
  
                 response = model.generate_content([prompt, extracted_text])
                 csv_content = response.text.strip()
