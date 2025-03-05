@@ -35,7 +35,7 @@ if uploaded_files:
                 prompt = """Extract the following details from the image document and return them in a clean CSV format:
  
  
-Invoice Number (Ensure it is extracted in plain text).
+Invoice Number (Ensure it is extracted in plain text without decimal).
 Invoice Date (Format it as 'YYYY-MM-DD').
 Due Date (Format it as 'YYYY-MM-DD', if the Due Date is represented as Net extract that also in plain text format,if due date as due date show that also, if there is date in the format dd-mm-yy - dd-mm-yy extract only the datae after - ).
 Client Name (Extract the full name of the client as it appears, it will be select the name of the compnay that sends out the bill and not the one who recieves, it should not be Sam Corporate and YUSUF).
