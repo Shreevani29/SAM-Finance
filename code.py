@@ -51,7 +51,7 @@ VAT % (Extract the percentage as a number).
 VAT Amount (Ensure it is extracted as a numeric value, if VAT is found extract that also).
 Total Amount without VAT (Extract total amount).
 Total Amount with VAT (Extract total amount, only for VAT % 5).
-Currency (If it is in symbol convert to code and display).
+Currency.
 TRN No (VAT exemption number).
 Ensure each field is placed in a separate column with appropriate headers. Return 'null' for any missing or unclear data. The CSV should be correctly formatted with commas as delimiters, without extra spaces or formatting errors."""
  
